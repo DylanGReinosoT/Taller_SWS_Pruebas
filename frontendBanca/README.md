@@ -1,7 +1,5 @@
 # Sistema Bancario - Frontend
 
-![Bienvenido al Sistema Bancario](./public/screenshot.png)
-
 ## 📋 Descripción
 
 Frontend desarrollado en **React + Vite** para un sistema de gestión bancaria seguro y eficiente. Permite la creación y administración de socios y cuentas bancarias con una interfaz moderna y responsiva.
