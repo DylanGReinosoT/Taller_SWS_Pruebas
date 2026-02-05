@@ -140,8 +140,8 @@ Este proyecto está bajo licencia MIT. Ver archivo `LICENSE` para más detalles.
 
 ## 📧 Contacto
 
-- **Autor:** [Tu Nombre]
-- **Email:** tu.email@ejemplo.com
+- **Autor:** Gabreil Reinoso
+- **Email:** dgreinoso@espe.edu.ec
 - **Proyecto:** Sistema Bancario - Control de Lectura Unidad 3
 
 ## 📚 Recursos Adicionales
