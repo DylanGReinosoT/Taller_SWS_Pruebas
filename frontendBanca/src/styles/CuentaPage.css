@@ -1,0 +1,161 @@
+.container-cuenta {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px 20px;
+}
+
+.formulario-wrapper {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.header-form {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.btn-volver {
+  background: #f0f0f0;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.btn-volver:hover {
+  background: #e0e0e0;
+}
+
+.formulario-wrapper h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grupo-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.grupo-campo label {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.input-field {
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.input-field:hover {
+  border-color: #bbb;
+}
+
+.btn-crear {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-crear:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-crear:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.btn-crear:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.mensaje {
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 20px;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mensaje.exito {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.mensaje.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+@media (max-width: 600px) {
+  .formulario-wrapper {
+    padding: 20px;
+  }
+
+  .formulario-wrapper h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .input-field {
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+}
+
